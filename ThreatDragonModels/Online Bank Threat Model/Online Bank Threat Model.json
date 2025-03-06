@@ -1,0 +1,23 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Online Bank Threat Model",
+    "owner": "Blacklight",
+    "description": "Institusi keuangan yang mengembangkan aplikasi perbankan online baru, dengan fokus pada pemodelan ancaman dan kerentanannya.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Senior Cybersecurity Engineer"
+      },
+      {
+        "name": "Christopher Jonathan"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "Cybersecurity Architect",
+    "threatTop": 0
+  }
+}
