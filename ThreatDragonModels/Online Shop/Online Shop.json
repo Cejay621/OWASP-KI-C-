@@ -1,0 +1,31 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Online Shop",
+    "owner": "Christopher Jonathan",
+    "description": "Sistem ini menangani transaksi pembayaran di platform e-commerce, memungkinkan pengguna untuk memesan produk dan melakukan pembayaran melalui berbagai metode seperti kartu kredit, e-wallet, atau transfer bank.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Christopher Jonathan"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "online shop",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "online shop STRIDE"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Christopher Jonathan",
+    "threatTop": 0
+  }
+}
