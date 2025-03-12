@@ -139,7 +139,7 @@
                   "id": "795edb86-f4c2-4327-a394-7542a1274f5a",
                   "title": "New STRIDE threat",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Spoofing",
                   "description": "Penyerang dapat menyamar sebagai pelanggan untuk melakukan pesanan palsu.",
                   "mitigation": "▪ Gunakan autentikasi multi-faktor (MFA).",
@@ -163,7 +163,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 1
               }
             }
