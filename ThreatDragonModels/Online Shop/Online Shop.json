@@ -35,13 +35,14 @@
                 "text": "Customer"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -125,16 +126,46 @@
               ]
             },
             "id": "2ff984a0-0d2b-4a97-8573-57572141ae65",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "795edb86-f4c2-4327-a394-7542a1274f5a",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Penyerang dapat menyamar sebagai pelanggan untuk melakukan pesanan palsu.",
+                  "mitigation": "▪ Gunakan autentikasi multi-faktor (MFA).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "cf653f5e-b274-437b-8663-e1d5feb28ead",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Pengguna dapat menyangkal bahwa mereka telah melakukan pembayaran.",
+                  "mitigation": "▪ Gunakan logging yang aman dan tidak dapat diubah untuk mencatat semua aktivitas transaksi.\n▪ Simpan bukti transaksi dalam sistem yang hanya dapat diakses oleh pihak berwenang.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -151,13 +182,14 @@
                 "text": "Payment Gateway"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,16 +273,46 @@
               ]
             },
             "id": "b7529042-ed92-47fb-baa7-4612f5784fbc",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Payment Gateway",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a598fb71-97bb-4faf-bafe-fd263785f2e6",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Penyerang dapat menyamar sebagai pelanggan untuk melakukan pesanan palsu.",
+                  "mitigation": "▪ Gunakan autentikasi multi-faktor (MFA).\n▪ Verifikasi detail kartu kredit.\n▪ Gunakan tokenisasi transaksi.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "13180d2a-61e1-47f4-a1d6-5a999dea3a61",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Pengguna dapat menyangkal bahwa mereka telah melakukan pembayaran.",
+                  "mitigation": "▪ Gunakan logging yang aman dan tidak dapat diubah untuk mencatat semua aktivitas transaksi.\n▪ Simpan bukti transaksi dalam sistem yang hanya dapat diakses oleh pihak berwenang.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -267,13 +329,14 @@
                 "text": "Bank"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -357,16 +420,33 @@
               ]
             },
             "id": "7fca1093-3889-4b33-ae7d-aded145a568e",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Bank",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ab37ab51-3bb2-4ff0-8c7c-899d55770c73",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Pengguna dapat menyangkal bahwa mereka telah melakukan pembayaran.",
+                  "mitigation": "▪ Gunakan logging yang aman dan tidak dapat diubah untuk mencatat semua aktivitas transaksi.\n▪ Simpan bukti transaksi dalam sistem yang hanya dapat diakses oleh pihak berwenang.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -390,6 +470,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -473,7 +554,6 @@
               ]
             },
             "id": "9db71525-8da6-467c-9173-b79f4423be34",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Manage\nOrder",
@@ -512,6 +592,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -595,7 +676,6 @@
               ]
             },
             "id": "25d6c8a9-6d8e-432a-a199-0336183bf94a",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Order Database",
@@ -657,56 +737,6 @@
             "vertices": [
               {
                 "x": 480,
-                "y": 70
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Add/update/remove order",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Add/update/remove order"
-            ],
-            "id": "62ccc95c-7726-4ca7-bee9-5ec0412df1c9",
-            "source": {
-              "cell": "9db71525-8da6-467c-9173-b79f4423be34",
-              "port": "0d43e1f2-36e8-48f3-ad06-ec217a015112"
-            },
-            "target": {
-              "cell": "25d6c8a9-6d8e-432a-a199-0336183bf94a",
-              "port": "3c31b9c2-bbef-4c0a-8035-8eb70281ffc1"
-            },
-            "vertices": [
-              {
-                "x": 780,
                 "y": 70
               }
             ]
@@ -1312,6 +1342,56 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Add/update/remove order",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Add/update/remove order"
+            ],
+            "id": "62ccc95c-7726-4ca7-bee9-5ec0412df1c9",
+            "source": {
+              "cell": "9db71525-8da6-467c-9173-b79f4423be34",
+              "port": "0d43e1f2-36e8-48f3-ad06-ec217a015112"
+            },
+            "target": {
+              "cell": "25d6c8a9-6d8e-432a-a199-0336183bf94a",
+              "port": "3c31b9c2-bbef-4c0a-8035-8eb70281ffc1"
+            },
+            "vertices": [
+              {
+                "x": 780,
+                "y": 70
+              }
+            ]
+          },
+          {
             "position": {
               "x": 580.5,
               "y": 220
@@ -1325,13 +1405,14 @@
                 "text": "Order\nPayment"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1415,19 +1496,53 @@
               ]
             },
             "id": "c20a3809-fb60-4823-9075-558d18669c1d",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Order\nPayment",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e6ae0f9f-b8ef-47d3-9121-5913f43a1b28",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif (misalnya, detail kartu kredit) bisa bocor.",
+                  "mitigation": "▪ Gunakan enkripsi untuk data dalam transit.\n▪ Batasi akses hanya untuk personel yang berwenang.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "4ebf499d-2941-4f88-96f4-dbda88c2085b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Penyerang dapat membanjiri dengan permintaan palsu, menyebabkan sistem down.",
+                  "mitigation": "▪ Gunakan firewall dan sistem deteksi intrusi.\n▪ Gunakan layanan proteksi DDoS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1444,13 +1559,14 @@
                 "text": "Payment\nValidation"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1534,19 +1650,66 @@
               ]
             },
             "id": "d7fa5dc6-7d23-404c-ad90-2bd4dc409c53",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Payment\nValidation",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2075b042-4b6a-48fa-9417-5f34a5599a53",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Penyerang dapat mencegat atau mengubah informasi pembayaran saat dikirim.",
+                  "mitigation": "▪ Gunakan enkripsi kuat.\n▪ Gunakan digital signature untuk memverifikasi integritas pesan.\n▪ Terapkan checksum dan logging transaksi untuk mendeteksi perubahan yang tidak sah.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "4560fe64-7362-443a-b180-f1a9ced7d05b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif (misalnya, detail kartu kredit) bisa bocor.",
+                  "mitigation": "▪ Gunakan enkripsi untuk data dalam transit.\n▪ Batasi akses hanya untuk personel yang berwenang.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "719ce435-b8d0-4b16-99b9-670952df1f29",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Penyerang dapat membanjiri dengan permintaan palsu, menyebabkan sistem down.",
+                  "mitigation": "▪ Gunakan firewall dan sistem deteksi intrusi.\n▪ Gunakan layanan proteksi DDoS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1573,6 +1736,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1656,7 +1820,6 @@
               ]
             },
             "id": "e73801ef-25c5-424b-9937-e368723054d0",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Client Database",
@@ -1678,6 +1841,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Christopher Jonathan",
-    "threatTop": 0
+    "threatTop": 11
   }
 }
